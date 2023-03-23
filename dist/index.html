@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+
+    <title>ITD108</title>
+    <link rel="stylesheet" href="reglog.css">
+    <script defer src="./bundle.js"></script>
+  </head>
+
+  <body>
+
+    <header>
+      <h1 class="logo"><span>s</span>ophia<span>e</span>sclrs</h1>
+    </header>
+
+    <div class="wrapper">
+
+      <div class="form register">
+        <h2>Registration</h2>
+
+        <div class="email input">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" name="email" id="email" required>
+          <label for="email">Email</label>
+        </div>
+
+        <div class="pass input">
+          <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+          <input type="password" name="password" id="password" required>
+          <label for="password">Password</label>
+        </div>
+
+        <div class="remember-forgot">
+          <label><input type="checkbox"> I agree to the Terms & Conditions</label>
+        </div>
+        
+        <button class="btn" onclick="register()">Register</button>
+
+        <div class="logreg">
+          <p>already have an account? <a href="login.html"> login here</a></p>
+        </div>
+      </div>
+
+    <script src="./authentication.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

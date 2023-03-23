@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img/bg.jpeg) no-repeat;
+    background-size: cover;
+	background-position:top center;
+	position: relative;
+	z-index: 1;
+}
+body::after {
+	content: '';
+    background-color: whitesmoke;
+    backdrop-filter: blur(0.9px);
+    opacity: 0.3;
+    position:absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    font-size: 2.5rem;
+     user-select: none;
+}
+.logo span{
+    color: #800020
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s ease;
+}
+
+.wrapper .form{
+    width: 100%;
+    padding: 40px;
+}
+
+.form h2{
+    font-size: 2rem;
+    color: #162938;
+    text-align: center;
+}
+
+.input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.input label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #162938;
+    font-weight: bold;
+    pointer-events: none;
+    transition: .5s;
+}
+.input input:focus~label,
+.input input:valid~label{
+    top: -5px;
+}
+
+.input input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    color: #162938;
+    font-weight: bolder;
+    padding: 0 35px 0 5px;
+}
+.input .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.5rem;
+    color: #162938;
+    line-height: 57px;
+}
+
+.remember-forgot{
+    font-size: 0.9rem;
+    color: #162938;
+    font-weight: bold;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input{
+    accent-color: #162938;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: #162938;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    font-weight: bold;
+    color: black;
+}
+
+.btn{
+    width: 100%;
+    height: 45px;
+    background: whitesmoke;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.logreg{
+    font-size: 0.9rem;
+    color: #162938;
+    text-align: center;
+    font-weight: bold;
+    margin: 25px 0 10px;
+}
+.logreg p a{
+    color: #162938;
+    text-decoration: none;
+    font-weight: bold;
+}
+.logreg p a:hover{
+    font-weight: bold;
+    color: black;
+}
