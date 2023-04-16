@@ -21,7 +21,7 @@ const register = () => {
             // Signed in 
             alert("Successfully Registered!")
             console.log(result)
-            window.location.reload();
+            window.location.href = "index.html";
             // ...
         })
         .catch((error) => {
@@ -41,10 +41,9 @@ const login = () => {
     firebase.auth().signInWithEmailAndPassword(email, password)
         .then((result) => {
             // Signed in
-            window.location.reload();
             alert("Successfully Login!")
             console.log(result)
-
+            window.location.href = "home.html";
         })
         .catch((error) => {
             alert("Email or Password is incorrect")

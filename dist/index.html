@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-auth-compat.js"></script>
 
     <title>ITD108</title>
     <link rel="stylesheet" href="reglog.css">
@@ -22,8 +22,8 @@
 
     <div class="wrapper">
 
-      <div class="form register">
-        <h2>Registration</h2>
+      <div class="form login">
+        <h2>Login</h2>
 
         <div class="email input">
           <span class="icon"><ion-icon name="mail"></ion-icon></span>
@@ -38,15 +38,17 @@
         </div>
 
         <div class="remember-forgot">
-          <label><input type="checkbox"> I agree to the Terms & Conditions</label>
+          <label><input type="checkbox"> Remember Me</label>
+          <a href="#">Forgot Password?</a>        
         </div>
         
-        <button class="btn" onclick="register()">Register</button>
+        <button class="btn" onclick="login()">Login</button>
 
         <div class="logreg">
-          <p>already have an account? <a href="login.html"> login here</a></p>
+          <p>don't have an account? <a href="register.html"> register here</a></p>
         </div>
       </div>
+    </div>
 
     <script src="./authentication.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
